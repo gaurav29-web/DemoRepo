@@ -6,6 +6,7 @@ import java.io.IOException;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
+import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
@@ -35,6 +36,7 @@ public class BaseClass {
 	 ExtentHtmlReporter extent = new ExtentHtmlReporter(new File(System.getProperty("user.dir")+"/Reports/rep"+Helper.getCurrentDateTime()+".html"));
 	 report = new ExtentReports();
 	 report.attachReporter(extent);
+	 Reporter.log("Executed SetUpSuite",true);
  }
  
 	@BeforeTest
