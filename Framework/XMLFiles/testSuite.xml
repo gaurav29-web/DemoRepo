@@ -4,7 +4,6 @@
   <test name="Test">
     <classes>
       <class name="com.TestCases.MyFirstTestcase"/>
-      <class name="com.TestCases.BaseClass"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

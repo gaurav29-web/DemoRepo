@@ -40,7 +40,6 @@
     <artifactId>poi-ooxml</artifactId>
     <version>3.7</version>
 </dependency>
-
 <!-- https://mvnrepository.com/artifact/org.testng/testng -->
 <dependency>
     <groupId>org.testng</groupId>
@@ -49,4 +48,23 @@
     <scope>test</scope>
 </dependency>
  </dependencies>
+ <build>
+ <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M5</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>XMLFiles/${xmlFile}</suiteXmlFile>
+          </suiteXmlFiles>
+          <SystemPropertyVariables>
+          <browserparam>${browser}</browserparam>
+           <urlparam>${url}</urlparam>
+          
+          </SystemPropertyVariables>
+        </configuration>
+      </plugin>
+</plugins>
+</build>
 </project>

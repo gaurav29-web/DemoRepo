@@ -11,6 +11,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 import com.Utility.BrowserFactory;
 import com.Utility.ConfigFileReader;
@@ -39,9 +40,12 @@ public class BaseClass {
 	 Reporter.log("Executed SetUpSuite",true);
  }
  
+ 	@Parameters({"browser","url"})
 	@BeforeTest
-	public void setup(){
-		driver = BrowserFactory.startApplication(driver, config.browserPath(), config.URLPath());
+	//public void setup(){
+	public void setup(String browser, String testURL){
+		//driver = BrowserFactory.startApplication(driver, config.browserPath(), config.URLPath());
+		driver = BrowserFactory.startApplication(driver, browser, testURL);
 	}
 	
 	@AfterTest
