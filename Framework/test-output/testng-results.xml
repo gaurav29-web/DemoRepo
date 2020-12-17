@@ -1,51 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
   <reporter-output>
     <line>
       <![CDATA[Executed SetUpSuite]]>
     </line>
-    <line>
-      <![CDATA[Input val== 1]]>
-    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="20318" started-at="2020-12-06T07:35:19Z" finished-at="2020-12-06T07:35:39Z">
+  <suite name="Suite" duration-ms="84" started-at="2020-12-09T04:52:10Z" finished-at="2020-12-09T04:52:10Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="20318" started-at="2020-12-06T07:35:19Z" finished-at="2020-12-06T07:35:39Z">
+    <test name="Test" duration-ms="84" started-at="2020-12-09T04:52:10Z" finished-at="2020-12-09T04:52:10Z">
       <class name="com.TestCases.MyFirstTestcase">
-        <test-method status="PASS" signature="setupSuite()[pri:0, instance:com.TestCases.MyFirstTestcase@e0abd9c7]" name="setupSuite" is-config="true" duration-ms="1188" started-at="2020-12-06T13:05:18Z" finished-at="2020-12-06T13:05:19Z">
+        <test-method status="PASS" signature="setupSuite()[pri:0, instance:com.TestCases.MyFirstTestcase@6b2fa501]" name="setupSuite" is-config="true" duration-ms="925" started-at="2020-12-09T10:22:09Z" finished-at="2020-12-09T10:22:10Z">
           <reporter-output>
             <line>
               <![CDATA[Executed SetUpSuite]]>
             </line>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.TestCases.MyFirstTestcase@e0abd9c7]" name="setup" is-config="true" duration-ms="16476" started-at="2020-12-06T13:05:19Z" finished-at="2020-12-06T13:05:35Z">
+        <test-method status="FAIL" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.TestCases.MyFirstTestcase@6b2fa501]" name="setup" is-config="true" duration-ms="0" started-at="2020-12-09T10:22:10Z" finished-at="2020-12-09T10:22:10Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
+in C:\Users\grvsi\git\DemoRepo\Framework\XMLFiles\testSuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
+in C:\Users\grvsi\git\DemoRepo\Framework\XMLFiles\testSuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:203)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:634)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="TestCase1()[pri:0, instance:com.TestCases.MyFirstTestcase@e0abd9c7]" name="TestCase1" duration-ms="198" started-at="2020-12-06T13:05:35Z" finished-at="2020-12-06T13:05:36Z">
+        <test-method status="SKIP" signature="TestCase1()[pri:0, instance:com.TestCases.MyFirstTestcase@6b2fa501]" name="TestCase1" duration-ms="0" started-at="2020-12-09T10:22:10Z" finished-at="2020-12-09T10:22:10Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
+in C:\Users\grvsi\git\DemoRepo\Framework\XMLFiles\testSuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
+in C:\Users\grvsi\git\DemoRepo\Framework\XMLFiles\testSuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:203)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:634)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
-            <line>
-              <![CDATA[Input val== 1]]>
-            </line>
           </reporter-output>
         </test-method> <!-- TestCase1 -->
-        <test-method status="PASS" signature="tearAfterMethod(org.testng.ITestResult)[pri:0, instance:com.TestCases.MyFirstTestcase@e0abd9c7]" name="tearAfterMethod" is-config="true" duration-ms="2743" started-at="2020-12-06T13:05:36Z" finished-at="2020-12-06T13:05:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TestCase1 status=SUCCESS method=MyFirstTestcase.TestCase1()[pri:0, instance:com.TestCases.MyFirstTestcase@e0abd9c7] output=Input val== 1]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearAfterMethod -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.TestCases.MyFirstTestcase@e0abd9c7]" name="tearDown" is-config="true" duration-ms="869" started-at="2020-12-06T13:05:38Z" finished-at="2020-12-06T13:05:39Z">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.TestCases.MyFirstTestcase@6b2fa501]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-09T10:22:10Z" finished-at="2020-12-09T10:22:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="tearAfterMethod(org.testng.ITestResult)[pri:0, instance:com.TestCases.MyFirstTestcase@6b2fa501]" name="tearAfterMethod" is-config="true" duration-ms="0" started-at="2020-12-09T10:22:10Z" finished-at="2020-12-09T10:22:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearAfterMethod -->
       </class> <!-- com.TestCases.MyFirstTestcase -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
